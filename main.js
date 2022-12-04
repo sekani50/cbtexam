@@ -30,13 +30,13 @@ function fetchQuestion(questName) {
         })
         .then(function (res) {
             questArr.push(res.data);
-            console.log(res)
+            //console.log(res)
         })
         .catch(function (res) { console.log(res) })
 }
 
 
-console.log(questArr);
+//console.log(questArr);
 
 
 const slicedQuest = {};
@@ -56,7 +56,7 @@ allsubject.forEach((eachsubject) => {
 
 
         let subjectName = eachsubject.children[1].innerText.toLowerCase();
-        console.log(subjectName);
+        //console.log(subjectName);
 
         changeBackgroundColor(subjectName, instBox.children[0]);
 
@@ -242,14 +242,14 @@ function nextButton(event) {
     //console.log("b4 addition in next btn " + count);
 
     count++;
-    console.log(count);
+    //console.log(count);
 
     questArr.forEach((val) => {
 
 
 
         if (count < val.length) {
-            console.log(val[count]);
+            //console.log(val[count]);
 
             displayQuestContent(
                 count + 1,
