@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/ea3f4b4992.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Exo|Acme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Test Page</title>
+</head>
+<body>
+    <div id="sel-container" style="width:100%;height:100%">
+        <!--sujects selection-->
+        <div class="header">
+
+            <i id="menu-bar" class="fa-solid fa-bars"></i>
+
+            <a id="home-page" href="index.html">home</a><h2 class="content">Select your preferred subject</h2>
+        </div>
+        <div id="hpage-box">
+            <a id="home-page" href="#">home</a>
+        </div>
+
+        <div class="subject-wrap">
+
+            <div class="each-subject" id="chemistry">
+                <i class="fa-solid fa-atom"></i>
+                <p class="sub-name">Chemistry</p>
+                <p class="misc">Expert ipsum dolor sit amet, is adipisicing elit, sed do iusmod tempor incididunt</p>
+
+            </div>
+            <div class="each-subject" id="physics">
+                <i class="fa-solid fa-dna"></i>
+                <p class="sub-name">Biology</p>
+                <p class="misc">Expert ipsum dolor sit amet, is adipisicing elit, sed do iusmod tempor incididunt</p>
+            </div>
+            <div class="each-subject" id="biology">
+                <i class="fa-solid fa-calculator"></i>
+                <p class="sub-name">Physics</p>
+                <p class="misc">Expert ipsum dolor sit amet, is adipisicing elit, sed do iusmod tempor incididunt</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="inst-container" style="width:100%;height:100%;">
+        <!--insrtuction-->
+
+        <div class="instruction-header" id="inst">
+            <h2 class="inst">Instructions</h2>
+        </div>
+        <div class="inst-content">
+            <p>Read the following instructions carefully!!!</p>
+            <p>1.All questions are multiple choice questions. Carefully select one answer ONLY.</p>
+            <p>2.Be mindful of your time bound, you will be notified when you are left with A minute.</p>
+            <p>3.Your test result are being saved automatically, even if your time elapses without submitting, you are covered.</p>
+            <p>4.You are free to submit whenever you are done.</p>
+            <p>5.Your Perfomance are displayed instantly after a succesfull submission.</p>
+        </div>
+        <div class="inst-page-btns">
+            <button id="back">Go Back</button>
+            <button id="start">Start Test</button>
+        </div>
+
+    </div>
+
+    <div id="quest-container" style="width:100%;height:100%;">
+        <!--multiple choice questions-->
+
+        <div class="question-header" id="quest">
+            <h3 id="subject-name">Chemsitry</h3>
+        </div>
+
+        <div class="number-and-time">
+            <p class="numbering" id="num">0 0f 15</p>
+            <p class="timing" id="time-handler"></p>
+        </div>
+
+        <!--alerts-->
+        <dialog>
+            <div id="alert-div">
+
+            </div>
+            <button id="dailog-btn" onclick="removeDialog()">OK</button>
+        </dialog>
+
+        <div class="multichoice-questn swipeIn" id="display-box">
+            <!--
+                <p>The element found in the periodic table in Group 4 and Period 6 is</p>
+
+            <input type="checkbox" class="check" id="first" name="option" />
+            <label for="first">Halfnium</label>
+            <br />
+            <input type="checkbox" class="check" id="first" name="option" />
+            <label for="first">Halfnium</label>
+            <br />
+            <input type="checkbox" class="check" id="first" name="option" />
+            <label for="first">Halfnium</label>
+            <br />
+            <input type="checkbox" class="check" id="first" name="option" />
+            <label for="first">Halfnium</label>
+            <br />
+            <input type="checkbox" class="check" id="first" name="option" />
+            <label for="first">Halfnium</label>
+            -->
+
+
+        </div>
+
+        <div class="prev-sub-nxt">
+            <button class="prev" id="previous" style="pointer-events:none;">Previous</button>
+            <button class="sub" id="submit" style="display:none;">Submit</button>
+            <button class="nxt" id="next">Next</button>
+        </div>
+
+        <div class="num-buttons" id="btn-box">
+            <!--
+
+             <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+            <button>13</button>
+            <button>14</button>
+            <button>15</button>
+            -->
+
+        </div>
+
+        <div id="analysis" class="analysis swipeUp">
+            <h2>Your total score is</h2>
+            <div id="number">
+                0%
+            </div>
+            <div class="another-home">
+                <button id="another-test">Take Another Test</button>
+                <a href="index.html" id="go-home">Back to Home</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

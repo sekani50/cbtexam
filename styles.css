@@ -1,0 +1,162 @@
+﻿@media (max-width:920px) {
+    body .header {
+        margin-left: 2em;
+        margin-top: 2em;
+        width: 95%;
+    }
+
+        body .header .logo {
+            width: 50%;
+            height: 80%;
+        }
+
+        body .header .hb-btn {
+            width: 37%;
+            height: 80%;
+            margin-left: 20px;
+            padding-top: 4px;
+        }
+
+            body .header .hb-btn .home {
+                padding: 3%;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+
+
+    .header .logo img {
+        width: 30%;
+        height: 30%;
+    }
+
+    body .main {
+        width: 95%;
+        margin-top: 2em;
+        margin-left: 3px;
+        text-align: center;
+    }
+
+        body .main h1 {
+            margin-bottom: 2%;
+            font-size: 300%;
+        }
+
+        body .main .utme {
+            font-size: 1em;
+            margin-bottom: 5%;
+        }
+
+        body .main .get-started {
+            font-size: 15px;
+            padding: 2%;
+            border-radius: 4px;
+        }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://demo.themexbd.com/rtl/acadamy/wp-content/uploads/2022/03/slider-01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+html {
+    overflow: hidden;
+}
+
+body::after,
+body::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    height: 15%;
+    margin-top: 3em;
+    margin-left: 9em;
+}
+
+    .header .logo {
+        width: 34%;
+        height: 100%;
+    }
+
+    .header .hb-btn {
+        width: 30%;
+        margin-left: 33%;
+    }
+
+        .header .hb-btn .home {
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: whitesmoke;
+            text-transform: uppercase;
+            padding: 5%;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+            .header .hb-btn .home:focus {
+                outline: none;
+            }
+
+            .header .hb-btn .home:hover {
+                color: rgba(255,105, 0, 1);
+            }
+
+    .header .logo img {
+        width: 50%;
+        height: 50%;
+    }
+
+.main {
+    width: 70%;
+    height: 50%;
+    margin-left: 9em;
+    color: whitesmoke;
+}
+
+    .main h1 {
+        width: 100%;
+        font-size: 800%;
+        margin-bottom: 4%;
+    }
+
+    .main .utme {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 3%;
+    }
+
+    .main .get-started {
+        padding: 2%;
+        border: none;
+        color: whitesmoke;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        cursor: pointer;
+        background: #FF7953;
+    }
+
+    .main .get-started:hover {
+        background: #584bed;
+    }
+
+    .main .get-started:focus {
+        outline: none;
+    }
