@@ -554,6 +554,8 @@ document.getElementById("submit").addEventListener('click', (event) => {
 
         document.getElementById("number").innerHTML = Math.floor((sum / noVal[0]) * 100) + "%";
         //console.log(scores);
+        
+        document.getElementById("submit").setAttribute("style", "display:none");
     }
 
 })
@@ -608,6 +610,8 @@ function removeDialog() {
         document.getElementById("analysis").style.display = "block";
 
         document.getElementById("number").innerHTML = Math.floor((sum / noVal[0]) * 100) + "%";
+        
+        document.getElementById("submit").setAttribute("style", "display:none");
     }
 }
 
@@ -735,6 +739,7 @@ document.getElementById("back").addEventListener('click', () => {
 
 
 document.getElementById("another-test").addEventListener('click', () => {
+     document.getElementById("analysis").style.display = "block";
     document.getElementById("quest-container").style.display = "none";
 
     document.getElementById("sel-container").style.display = "block";
