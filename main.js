@@ -160,6 +160,11 @@ function htmlElementCreator(el) {
 function displayQuestContent(qn, quest, optionA, optionB, optionC, optionD, optionE) {
 
     displayBox.innerHTML = "";
+    
+      let scroll = document.getElementById("div");
+      scroll.setAttribute("class", "sub");
+
+      displayBox.appendChild(scroll);
 
     let pTagB = document.createElement("p");
     let pTagTextB = document.createTextNode("Q" + qn);
