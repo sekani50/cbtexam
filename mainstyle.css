@@ -571,6 +571,7 @@ body::before {
     margin-left: 1em;
     margin-top: 30px;
     padding: 1%;
+    overflow:auto;
 }
 
 .multichoice-questn {
@@ -818,9 +819,16 @@ dialog {
     display: none;
 }
 
-#quest-container {
-    display: none;
-}
+ #quest-container {
+           display:none;
+           overflow:hidden;
+       }
+    .sub {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0%;
+        z-index: 1;
+    }
 
 /*********************/
 #progress {
@@ -856,3 +864,17 @@ dialog {
         -webkit-transform: rotate(359deg);
     }
 }
+::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1em;
+        background-color: rgba(50,50,50,0.3);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1em;
+        background-color: rgba(50,50,50,0.1);
+    }
