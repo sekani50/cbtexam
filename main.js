@@ -161,8 +161,8 @@ function displayQuestContent(qn, quest, optionA, optionB, optionC, optionD, opti
 
     displayBox.innerHTML = "";
     
-      let scroll = document.getElementById("div");
-      scroll.setAttribute("class", "sub");
+      //let scroll = document.getElementById("div");
+      //scroll.setAttribute("class", "sub");
 
       displayBox.appendChild(scroll);
 
