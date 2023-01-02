@@ -164,7 +164,7 @@ function displayQuestContent(qn, quest, optionA, optionB, optionC, optionD, opti
       //let scroll = document.getElementById("div");
       //scroll.setAttribute("class", "sub");
 
-      displayBox.appendChild(scroll);
+      //displayBox.appendChild(scroll);
 
     let pTagB = document.createElement("p");
     let pTagTextB = document.createTextNode("Q" + qn);
